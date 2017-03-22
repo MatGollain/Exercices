@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_PGCD", "Exercice 21 03\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_NbPremier", "Exo_NbPremier\Exo_NbPremier.csproj", "{93D4A672-8749-42FB-9B79-AE95A747B08A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pendu", "Pendu\Pendu.csproj", "{0F8059B4-8105-4C69-8A46-DD4DC9261D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tableau", "Tableau\Tableau.csproj", "{FDF92F01-6D8B-457B-986E-2722D81B0135}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{93D4A672-8749-42FB-9B79-AE95A747B08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93D4A672-8749-42FB-9B79-AE95A747B08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93D4A672-8749-42FB-9B79-AE95A747B08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8059B4-8105-4C69-8A46-DD4DC9261D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8059B4-8105-4C69-8A46-DD4DC9261D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8059B4-8105-4C69-8A46-DD4DC9261D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8059B4-8105-4C69-8A46-DD4DC9261D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF92F01-6D8B-457B-986E-2722D81B0135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF92F01-6D8B-457B-986E-2722D81B0135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF92F01-6D8B-457B-986E-2722D81B0135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF92F01-6D8B-457B-986E-2722D81B0135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

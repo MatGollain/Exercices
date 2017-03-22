@@ -10,8 +10,28 @@ namespace Exo_NbPremier
     {
         static void Main(string[] args)
         {
-            NbPremier();
+            CombienPremier();
+            //NbPremier();
+            //Correction();
             Console.ReadKey();
+        }
+
+
+        static int SaisiPremier()
+        {
+            Console.WriteLine("Combien de nombre premier (0 pour sortir) : ");
+            return int.Parse(Console.ReadLine());
+        }
+
+        static void CombienPremier()
+        {
+            int n;
+            n = SaisiPremier();
+            while (n != 0)
+            {
+                CalculerPremier(n);
+                n = SaisiPremier();
+            }
         }
 
         static void NbPremier()
@@ -26,15 +46,10 @@ namespace Exo_NbPremier
 
             compt = 1;
             Console.WriteLine("2"); // 1 n'est pas premier
-            if (n > 1)
-            {
-                Console.WriteLine("3");
-                compt++;
-            }
             nbr = 3;
             while(compt < n)
             {
-                divis = 3;
+                divis = 2;
                 estPremier = true;
                 do
                 {
@@ -44,7 +59,7 @@ namespace Exo_NbPremier
                     }
                     else
                     {
-                        divis += 2;
+                        divis++;
                     }
                 } while (estPremier && divis < nbr / 2);
                 if (estPremier)
@@ -56,30 +71,61 @@ namespace Exo_NbPremier
             }
         }
 
-        static void correction()
+        static void Correction()
         {
             int divis, nbr, n, compt = 0;
-            bool estPremier;
-            Console.WriteLine("Combien de nombre premier: ");
+            bool Est_premier;
+            Console.Write("Combien de nombres premiers : ");
             n = Int32.Parse(System.Console.ReadLine());
-            Console.WriteLine(2);
+            Console.WriteLine(2); // WriteLine = new line | Write = ecriture sur la même ligne
             nbr = 3;
-            while(compt < n-1)
+            while (compt < n - 1)
+            {
+                divis = 2;
+                Est_premier = true;
+                do
+                {
+                    if (nbr % divis == 0) Est_premier = false;
+                    else divis = divis + 1;
+                }
+                while ((divis <= nbr / 2) && (Est_premier == true));
+                if (Est_premier)
+                {
+                    compt++;
+                    System.Console.WriteLine(nbr);
+                }
+                nbr++;
+            }
+        }
+
+        static void CalculerPremier(int nbPrem)
+        {
+            int nbr, divis, compt=1;
+            bool estPremier;
+            Console.WriteLine("2"); // 1 n'est pas premier
+            nbr = 3;
+            while (compt < nbPrem)
             {
                 divis = 2;
                 estPremier = true;
                 do
                 {
-                    if (nbr % divis == 0) estPremier = false;
-                    else divis++;
-                } while ((divis <= nbr / 2));
+                    if (nbr % divis == 0)
+                    {
+                        estPremier = false;
+                    }
+                    else
+                    {
+                        divis++;
+                    }
+                } while (estPremier && divis < nbr / 2);
+                if (estPremier)
+                {
+                    Console.WriteLine(nbr);
+                    compt++;
+                }
+                nbr += 2;
             }
-            if (estPremier)
-            {
-                compt++;
-                Console.WriteLine(nbr);
-            }
-            nbr++;
         }
     }
 }
