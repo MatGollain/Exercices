@@ -26,7 +26,7 @@ namespace Pendu
             mot = SaisiMot();
             while (mot == string.Empty)
             {
-                Console.WriteLine("Mauvais saisie, merci de ne pas mettre de chiffre ou caractère spéciaux");
+                Console.WriteLine("Mauvais saisie, merci de ne pas mettre de chiffre ou caractère spéciaux.");
                 mot = SaisiMot();
             }
             trouve = new char[mot.Length];
@@ -34,7 +34,7 @@ namespace Pendu
             while (essai > 0)
             {
                 Console.WriteLine(" ");
-                Console.WriteLine("Il vous reste " + essai + "essais");
+                Console.WriteLine("Il vous reste " + essai + " essais.");
                 AffichMenu();
                 choix = SaisiChoix();
                 switch (choix)

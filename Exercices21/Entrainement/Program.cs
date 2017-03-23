@@ -127,7 +127,7 @@ namespace Entrainement
                 }
             }
 
-            Console.WriteLine(texte + "\n");
+            Console.WriteLine("{0} et pourquoi pas {1}\n", texte,nbMots);       // |=>  Console.WriteLine("{0} \n", texte);   ==   Console.WriteLine(texte + "\n"); 
             Console.WriteLine("Il y a " + nbMots + " mots dans la variable \"texte\".");
 
 
@@ -140,3 +140,6 @@ namespace Entrainement
 
     }
 }
+
+/* Pour écrire de manière totalement libre : @" zigezpgi    knezùrpinez
+    bvknebpine" L'affichage montrera tel quel les sauts de lignes. Pour afficher une " il faut la doubler ""  */
